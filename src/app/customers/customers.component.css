@@ -1,0 +1,66 @@
+/* General table styling */
+.table {
+  border-radius: 10px; /* Rounded corners for a modern look */
+  font-size: 16px; /* Ensuring text is readable */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.table th, .table td {
+  text-align: center; /* Center align text */
+  vertical-align: middle;
+  padding: 12px; /* Adequate padding for readability */
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Table header styling */
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-align: center; /* Center the title */
+  color: #007bff; /* Primary blue color */
+}
+
+/* Dark table header */
+.thead-dark {
+  background-color: #343a40;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Table row hover effect */
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1; /* Light background on hover */
+  cursor: pointer;
+  transform: scale(1.02); /* Slight scaling effect for interaction */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Table shadow and rounded corners */
+.table-responsive {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow-x: auto; /* Prevent horizontal overflow */
+  margin-bottom: 20px; /* Space at the bottom */
+}
+
+/* Active row highlighting */
+.table tbody tr.active {
+  background-color: #e2e6ea;
+  font-weight: bold;
+  border-left: 3px solid #007bff; /* Blue border for active row */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 767px) {
+  .table {
+    font-size: 14px; /* Smaller font size for mobile devices */
+  }
+
+  .table th, .table td {
+    padding: 10px; /* Less padding on mobile */
+  }
+
+  .table-responsive {
+    overflow-x: auto; /* Allow horizontal scroll on smaller screens */
+  }
+}

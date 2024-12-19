@@ -1,0 +1,44 @@
+<div class="container my-5" *ngIf="bills">
+  <!-- Card Container -->
+  <div class="card shadow-sm">
+    <div class="card-header text-center">
+      <h2>Bill Details</h2>
+    </div>
+    <div class="card-body">
+      <!-- Customer Information -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <p><strong>Customer Name:</strong> {{ bills.customer.name }}</p>
+          <p><strong>Customer Email:</strong> {{ bills.customer.email }}</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Bill Date:</strong> {{ bills.billDate | date }}</p>
+        </div>
+      </div>
+
+      <!-- Table for Product Items -->
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Discount</th>
+          <th>Total Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of bills.productItems">
+          <td>{{ item.id }}</td>
+          <td>{{ item.product.name }}</td>
+          <td class="currency">{{ item.product.price | currency }}</td>
+          <td>{{ item.quantity }}</td>
+          <td class="discount">{{ item.discount | percent }}</td>
+          <td class="currency">{{ item.quantity * item.product.price * (1 - item.discount) | currency }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

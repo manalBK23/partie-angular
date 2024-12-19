@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Card Container Styling */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #B8A0D9; /* Updated Purple background */
+  color: white;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  color: white; /* Changed to white */
+}
+
+/* Customer Information */
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+  color: #495057; /* Slightly muted color for labels */
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa; /* Light background for the table */
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #DCCFF5; /* Lavender header color */
+  color: #4A235A; /* Dark purple for text */
+  font-weight: bold;
+}
+
+.table td {
+  background-color: #ffffff;
+}
+
+.table tr:nth-child(even) {
+  background-color: #F3EAFD; /* Very light lavender for alternate rows */
+}
+
+.table td:hover {
+  background-color: #EDE3FA; /* Slightly darker lavender on hover */
+}
+
+/* Price and Discount Styling */
+.currency {
+  font-weight: bold;
+  color: #28a745; /* Green color for prices */
+}
+
+.discount {
+  color: #dc3545; /* Red color for discounts */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 15px;
+  }
+
+  .table th, .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
