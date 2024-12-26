@@ -2,6 +2,40 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
+# Répertoires principaux
+
+customers : Gestion des clients.
+home : Page d'accueil.
+Bills : Détails d'une commande.
+
+# Technologies Utilisées
+
+Angular.
+TypeScript.
+Bootstrap pour le design. 
+
+# Fonctionnalités Clés
+
+Interface utilisateur responsive et moderne.
+Consommation des API REST fournies par le backend.
+Gestion des modules clients, produits, et commandes.
+Navigation facile grâce à Angular Routing.
+
+# ScreenShots
+
+# Products Interface :
+
+<img width="960" alt="Produit" src="https://github.com/user-attachments/assets/e4262b09-7ac9-41a4-9ae9-609b613ba1aa" />
+
+# Customers Interface :
+
+<img width="960" alt="Customer" src="https://github.com/user-attachments/assets/ab6c16b7-cbae-4c70-8968-d76ba6c108d5" />
+
+# Bills Interface :
+
+<img width="960" alt="Bills" src="https://github.com/user-attachments/assets/9888740f-ef47-4ea8-ad00-6b9d903accdd" />
+
+
 ## Development server
 
 To start a local development server, run:
